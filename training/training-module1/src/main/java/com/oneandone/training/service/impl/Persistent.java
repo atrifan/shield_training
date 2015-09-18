@@ -20,16 +20,7 @@ public class Persistent implements Connection {
             ObjectInputStream reader = new ObjectInputStream(clientSocket.getInputStream());
             writer.writeObject(myself);
 
-            //because the server does not know me I must send him my super power information when he asks
-            //TODO 2: listen for message from server `SUPER-POWER?`
-
-
-            //TODO 2: answer to message with super power
-
-
             //TODO 2: close connection
-
-
             return null;
         } catch (IOException e) {
             e.printStackTrace();

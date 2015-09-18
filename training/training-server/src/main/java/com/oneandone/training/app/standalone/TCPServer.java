@@ -27,9 +27,6 @@ public class TCPServer {
                     connectionIdentity.getAge(),
                     connectionIdentity.getHeight(),
                     connectionIdentity.getSpeed()));
-            writer.writeChars("SUPER-POWER?");
-            String superPower = (String) reader.readObject();
-            System.out.println(String.format("%s has an ability of %s", connectionIdentity.getName(), superPower));
         }
     }
 }
