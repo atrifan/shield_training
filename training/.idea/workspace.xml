@@ -97,11 +97,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Persistent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Persistent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training-module1/src/main/java/com/oneandone/training/service/impl/Persistent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55189455">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Http.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/training-module1/src/main/java/com/oneandone/training/service/impl/Http.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5815486">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,6 +137,7 @@
         <option value="$PROJECT_DIR$/training-server/src/main/java/com/oneandone/training/app/server/controller/Shield.java" />
         <option value="$PROJECT_DIR$/training-server/src/main/java/com/oneandone/training/app/standalone/TCPServer.java" />
         <option value="$PROJECT_DIR$/training-module1/src/main/java/com/oneandone/training/service/impl/Persistent.java" />
+        <option value="$PROJECT_DIR$/training-module1/src/main/java/com/oneandone/training/service/impl/Http.java" />
       </list>
     </option>
   </component>
@@ -906,12 +919,12 @@
       <created>1442567869395</created>
       <option name="number" value="Default" />
       <updated>1442567869395</updated>
-      <workItem from="1442567877274" duration="1969000" />
+      <workItem from="1442567877274" duration="2151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1969000" />
+    <option name="totallyTimeSpent" value="2151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -1014,8 +1027,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/training-module1/src/main/java/com/oneandone/training/service/impl/Persistent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55189455">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training-module1/src/main/java/com/oneandone/training/service/impl/Http.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5815486">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

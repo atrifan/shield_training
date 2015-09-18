@@ -1,6 +1,6 @@
 package com.oneandone.training.service.impl;
 
-import com.oneandone.util.training.communication.model.inheritance.SuperHero;
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 import com.oneandone.training.service.Connection;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -20,7 +20,7 @@ import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
  * Created by alexandru.trifan on 17.09.2015.
  */
 public class Http implements Connection {
-    String SERVER_INFO_ENDPOINT = "http://localhost:8083/training-server";
+    String SERVER_INFO_ENDPOINT = "http://localhost:8080/training-server";
     public Response sendInfoAboutSelf(SuperHero myself) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(SERVER_INFO_ENDPOINT).path("/shield");
