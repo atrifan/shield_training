@@ -1,0 +1,114 @@
+Iun 24, 2015 12:04:24 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 12:04:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 12:04:39 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 12:08:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: restart: Reloading web application '/Server'
+Iun 24, 2015 12:08:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 12:11:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: restart: Reloading web application '/Server'
+Iun 24, 2015 12:12:03 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:35:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Iun 24, 2015 10:35:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Iun 24, 2015 10:35:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:35:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:38:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:38:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:38:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:42:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:42:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:42:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:44:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:44:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:44:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:51:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:51:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:51:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:52:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:52:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:52:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:52:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:52:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:52:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:52:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:52:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:53:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Iun 24, 2015 10:53:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Iun 24, 2015 10:53:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:53:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:53:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:53:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:53:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:53:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:54:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:55:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:55:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:55:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:55:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Iun 24, 2015 10:55:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Iun 24, 2015 10:55:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:55:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:55:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:56:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:56:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:56:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:57:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Iun 24, 2015 10:57:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Iun 24, 2015 10:57:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: undeploy: Undeploying web application at '/Server'
+Iun 24, 2015 10:57:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 10:57:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Iun 24, 2015 11:06:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'

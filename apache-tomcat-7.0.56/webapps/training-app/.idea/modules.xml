@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/training-java.iml" filepath="$PROJECT_DIR$/training-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training-model/training-model.iml" filepath="$PROJECT_DIR$/training-model/training-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training-module1/training-module1.iml" filepath="$PROJECT_DIR$/training-module1/training-module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training-server/training-server.iml" filepath="$PROJECT_DIR$/training-server/training-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/training-util/training-util.iml" filepath="$PROJECT_DIR$/training-util/training-util.iml" />
+    </modules>
+  </component>
+</project>

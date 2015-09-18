@@ -1,0 +1,614 @@
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO http-apr-8080-exec-11 java.sql.DatabaseMetaData - HHH000262: Table not found: Notificari
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO http-apr-8080-exec-11 java.sql.DatabaseMetaData - HHH000262: Table not found: Notificari
+INFO http-apr-8080-exec-11 java.sql.DatabaseMetaData - HHH000262: Table not found: Notificari
+INFO http-apr-8080-exec-11 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO http-apr-8080-exec-11 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6ed25fb4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO http-apr-8080-exec-11 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4327 ms
+INFO http-apr-8080-exec-13 org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Sat Jun 27 22:30:16 EEST 2015]; root of context hierarchy
+INFO http-apr-8080-exec-13 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6ed25fb4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO http-apr-8080-exec-13 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO http-apr-8080-exec-12 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO http-apr-8080-exec-12 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sat Jun 27 22:35:57 EEST 2015]; root of context hierarchy
+INFO http-apr-8080-exec-12 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO http-apr-8080-exec-12 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO http-apr-8080-exec-12 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO http-apr-8080-exec-12 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO http-apr-8080-exec-12 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO http-apr-8080-exec-12 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO http-apr-8080-exec-12 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO http-apr-8080-exec-12 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO http-apr-8080-exec-12 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO http-apr-8080-exec-12 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO http-apr-8080-exec-12 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO http-apr-8080-exec-12 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO http-apr-8080-exec-12 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO http-apr-8080-exec-12 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7b2ecde9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO http-apr-8080-exec-12 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3438 ms
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 01:27:55 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-1 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-1 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-1 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-1 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-1 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-1 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-1 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-1 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO localhost-startStop-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2df2bb95: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 22229 ms
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 01:27:55 EEST 2015]; root of context hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2df2bb95: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-2 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-2 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 01:47:27 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-2 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-2 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-2 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-2 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-2 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-2 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-2 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-2 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-2 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-2 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-2 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-2 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO localhost-startStop-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7303328e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-2 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4402 ms
+INFO http-apr-8080-exec-2 org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 01:47:27 EEST 2015]; root of context hierarchy
+INFO http-apr-8080-exec-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7303328e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO http-apr-8080-exec-2 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO http-apr-8080-exec-2 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO http-apr-8080-exec-2 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 01:48:07 EEST 2015]; root of context hierarchy
+INFO http-apr-8080-exec-2 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO http-apr-8080-exec-2 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO http-apr-8080-exec-2 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO http-apr-8080-exec-2 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO http-apr-8080-exec-2 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO http-apr-8080-exec-2 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO http-apr-8080-exec-2 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO http-apr-8080-exec-2 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO http-apr-8080-exec-2 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO http-apr-8080-exec-2 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO http-apr-8080-exec-2 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO http-apr-8080-exec-2 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO http-apr-8080-exec-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO http-apr-8080-exec-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@55b823c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO http-apr-8080-exec-2 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4117 ms
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 01:48:07 EEST 2015]; root of context hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@55b823c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-3 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-3 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 01:51:35 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-3 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-3 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-3 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-3 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-3 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-3 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-3 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-3 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-3 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-3 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-3 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-3 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO localhost-startStop-3 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO localhost-startStop-3 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15791c57: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-3 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3876 ms
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 01:51:35 EEST 2015]; root of context hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15791c57: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO http-apr-8080-exec-5 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO http-apr-8080-exec-5 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 01:59:26 EEST 2015]; root of context hierarchy
+INFO http-apr-8080-exec-5 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO http-apr-8080-exec-5 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO http-apr-8080-exec-5 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO http-apr-8080-exec-5 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO http-apr-8080-exec-5 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO http-apr-8080-exec-5 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO http-apr-8080-exec-5 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO http-apr-8080-exec-5 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO http-apr-8080-exec-5 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO http-apr-8080-exec-5 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO http-apr-8080-exec-5 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO http-apr-8080-exec-5 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO http-apr-8080-exec-5 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO http-apr-8080-exec-5 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64241261: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO http-apr-8080-exec-5 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3821 ms
+INFO localhost-startStop-2 org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 01:59:26 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64241261: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-2 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 02:02:54 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-1 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-1 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-1 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-1 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-1 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-1 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-1 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-1 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO localhost-startStop-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b480318: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3603 ms
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 02:02:54 EEST 2015]; root of context hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b480318: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 02:25:20 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-1 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-1 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-1 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-1 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-1 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-1 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-1 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-1 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO localhost-startStop-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3650dcb6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3464 ms
+WARN http-apr-8080-exec-7 org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
+ERROR http-apr-8080-exec-7 org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: duplicate key value violates unique constraint "uk_s80p7g2an86cbh5cpug26rq75"
+  Detail: Key (username)=(testingos) already exists.
+INFO http-apr-8080-exec-7 org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+WARN http-apr-8080-exec-4 org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
+ERROR http-apr-8080-exec-4 org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: duplicate key value violates unique constraint "uk_s80p7g2an86cbh5cpug26rq75"
+  Detail: Key (username)=(testingos) already exists.
+INFO http-apr-8080-exec-4 org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+WARN http-apr-8080-exec-8 org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
+ERROR http-apr-8080-exec-8 org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: duplicate key value violates unique constraint "uk_s80p7g2an86cbh5cpug26rq75"
+  Detail: Key (username)=(testingos) already exists.
+INFO http-apr-8080-exec-8 org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+WARN http-apr-8080-exec-6 org.jboss.resteasy.core.ExceptionHandler - failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://localhost:8080/Server/admin
+	at org.jboss.resteasy.core.registry.ClassNode.match(ClassNode.java:73)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:503)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2462)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2451)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 02:25:20 EEST 2015]; root of context hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3650dcb6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-2 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-2 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 03:29:20 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-2 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-2 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-2 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-2 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-2 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-2 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-2 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-2 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-2 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-2 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-2 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-2 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.masina
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, model, combustibil, nrinmatriculare, anfabricatie, tip]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_mrp1b2sl4nq7v5hpgj0sbwo9a]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [masina_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.notificari
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, destinatar, sentdate, mesaj]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_rkohqkpkdmub3rj9sq5wfiiy2]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [notificari_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.sofer
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [prenume, masina_id, company_id, adresa, regid, nume, cnp, available, telefon, password, id, username, email, dataangajare, datanasterii]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_o93t082nctbwmaoyf8tcafenp, fk_cat2s4p96ksfa5bnwf6s965sg]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sofer_pkey, uk_edh3c9g36sh8f0lfvyiqvcjl6, uk_1sc4rfyd1kk1hrkhj4es0x44f]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactie
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [amount, id, reason, date, transaction_id]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_erxnj6qyime6v0xbah6gbxrud]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactie_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.transactii
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, driver_id, currency]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_g9if4sabud1ga6x938uoqrnuh, fk_jr4lq7wkn6v79b2hm96vt7sio]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [transactii_pkey]
+INFO localhost-startStop-2 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO localhost-startStop-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5cb415a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-2 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3242 ms
+INFO localhost-startStop-3 org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jul 02 03:29:20 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-3 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5cb415a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,ro.licenta.controller.LoginController#0,ro.licenta.controller.RegisterController#0,ro.licenta.controller.CompanyController#0,ro.licenta.controller.DriverController#0,entityManagerFactory,dataSource,transactionManager,scopedTarget.jbossClientRequest,jbossClientRequest,notificationSystem,companyDao,driverDao,carDao,orderDao,transactionDao,transactionsDao,adminDao,notificationDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO localhost-startStop-3 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jul 02 10:27:21 EEST 2015]; root of context hierarchy
+INFO localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-context.xml]
+INFO localhost-startStop-1 org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO localhost-startStop-1 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'licenta'
+INFO localhost-startStop-1 org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: licenta
+	...]
+INFO localhost-startStop-1 org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final}
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO localhost-startStop-1 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO localhost-startStop-1 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO localhost-startStop-1 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO localhost-startStop-1 org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO localhost-startStop-1 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO localhost-startStop-1 org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.administrator
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, company_id, phone, username, email, password]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_kmf9tmsfokmqdy7yjiteg0tna]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_s80p7g2an86cbh5cpug26rq75, administrator_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.comanda
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [arrivedate, company_id, delivered, weight, destinationphoneno, urgent, destinationaddress, destinationmail, destination, id, sender, price, driver_id]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_53619wh6tlt4fu72i33npo64d, fk_4k6p3e58vxo95p9hlnvt2do8i]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [comanda_pkey]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.companie
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [telefonmobil, activitate, id, mail, adresa, username, nume, oras, password, telefonfix]
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO localhost-startStop-1 org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sgfb2gevxk9pxg0y2cdfnlfnf, companie_pkey]
