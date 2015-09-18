@@ -1,6 +1,6 @@
 package com.oneandone.training.app.standalone;
 
-import com.oneandone.util.training.communication.model.Person;
+import com.oneandone.training.communication.model.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

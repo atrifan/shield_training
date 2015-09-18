@@ -1,7 +1,6 @@
 package com.oneandone.training.app;
 
-import com.oneandone.util.training.communication.model.Person;
-import com.oneandone.util.training.communication.model.inheritance.SuperHero;
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 import com.oneandone.training.service.impl.Http;
 import com.oneandone.training.service.impl.Persistent;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -54,7 +53,7 @@ public class App {
         switch(connectionType) {
             case REST:
                 Http httpConnection = new Http();
-                Response response = httpConnection.sendInfoAboutSelf(mySelf);
+                Response response = (Response) httpConnection.sendInfoAboutSelf(mySelf);
 
                 //reading the entity
                 /*String theResponse = response.readEntity(String.class);

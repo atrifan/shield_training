@@ -1,6 +1,6 @@
 package com.oneandone.training.service.impl;
 
-import com.oneandone.util.training.communication.model.inheritance.SuperHero;
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 import com.oneandone.training.service.Connection;
 
 import java.io.*;

@@ -1,6 +1,7 @@
 package com.oneandone.training.app.server.controller;
 
-import com.oneandone.util.training.communication.model.inheritance.SuperHero;
+
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;

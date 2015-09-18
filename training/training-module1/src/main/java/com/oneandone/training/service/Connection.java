@@ -1,6 +1,7 @@
 package com.oneandone.training.service;
 
-import com.oneandone.util.training.communication.model.inheritance.SuperHero;
+
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 
 /**
  * Created by alexandru.trifan on 17.09.2015.

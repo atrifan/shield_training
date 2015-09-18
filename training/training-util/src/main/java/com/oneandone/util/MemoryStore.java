@@ -1,6 +1,7 @@
 package com.oneandone.util;
 
-import com.oneandone.util.training.communication.model.inheritance.SuperHero;
+
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 
 import java.util.ArrayList;
 import java.util.Collection;
