@@ -1,0 +1,49 @@
+!define TEST_SYSTEM {slim}
+!path C:\Users\agobjila\workspace\fitnesse-fixtures\target\fitnesse-fixtures-0.0.1-SNAPSHOT.jar
+
+1. Allocate Provisioning ID and generate random Provisioningid to be used in this test
+
+!include -c .FrontPage.SslPss.ToolSuite.GetProvisioningId
+
+2. CAPI Order certificate
+
+|!-Table:com.oneandone.ssl.fixture.rest.RestFixture-!|
+|setDomains||
+|basePath|CAPI|
+|setHeaders|Content-Type: application/json;Accept: application/json|
+|setBody|{{{{
+    "approverEmail": "hostmaster@$#Domain##",
+    "technicalContact": {
+        "firstName": "TechC First",
+        "lastName": "TechC Last",
+        "email": "techc@$#Domain##",
+        "title": "Mr",
+        "phone": "+40725985341"
+    },
+    "adminContact": {
+        "firstName": "AdminC First",
+        "lastName": "AdminC Last",
+        "email": "adminc@$#Domain##",
+        "title": "Mr",
+        "phone": "+40725985341"
+    },
+    "authenticationMethod": "DNS",
+    "commonName": "$#Subdomain##",
+    "domainId": "10160697"
+}
+}}}|
+|POST|/ssl-capi/provitems/$#Provisioningid##/certificates|200|
+|getVariable|response.body||
+|setVariableDynamic|Certificateid|response.body|$.certificateId|
+|setVariableDynamic|Orderid|response.body|$.orderId|
+
+|!-Table:com.oneandone.ssl.fixture.rest.RestFixture-!|
+|stopTestIfEmpty|Certificateid|
+
+3. CAPI Verify that certificate entry has been created in CAPI Get Certificate
+
+|!-Table:com.oneandone.ssl.fixture.rest.RestFixture-! |
+|basePath|CAPI|
+|setHeaders|Content-Type: application/json;Accept: application/json|
+|GET|/ssl-capi/provitems?prov_id=$#Provisioningid##|200|
+|getVariable|response.body||

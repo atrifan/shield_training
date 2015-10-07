@@ -11,7 +11,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.fitnesse:fitnesse:20081201" level="project" />
+    <orderEntry type="library" name="Maven: org.fitnesse:fitnesse:20111025" level="project" />
     <orderEntry type="module" module-name="training-module1" />
     <orderEntry type="module" module-name="training-model" />
     <orderEntry type="library" name="Maven: org.jboss.resteasy:resteasy-spring:3.0.11.Final" level="project" />
@@ -40,5 +40,9 @@
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:2.16" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.12" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jsr173_api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.jayway.jsonpath:json-path:0.9.0" level="project" />
+    <orderEntry type="library" name="Maven: net.minidev:json-smart:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
   </component>
+  <component name="POM File Configuration" pomFile="" />
 </module>

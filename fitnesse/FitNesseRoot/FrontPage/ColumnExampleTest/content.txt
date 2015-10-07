@@ -1,0 +1,14 @@
+!define TEST_SYSTEM {fit}
+!path ..\training\training-module2\target\training-module2-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+!|com.oneandone.ColumnExample|
+|firstNumber|secondNumber|total?|persistHero?|deleteHero?|
+|1|2|2|true|true|
+
+|Action Fixture|
+|start|com.oneandone.ActionExample|
+|enter|setName|HELLO|
+|enter|setSurName|WORLD|
+|press|getFullName|
+|check|checkFullName|HELLO WORLD|
+
