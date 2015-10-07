@@ -3,16 +3,16 @@
  */
 requirejs.config({
    paths: {
-       'componentMap': '/public/js/component_map',
-       'clientProvider': '/public/js/client_provider',
-       'modal': '/components/form/js/modal',
-       'context': '/public/js/context',
-       'eventEmitter': '/public/js/lib/EventEmitter',
-       'framework': '/public/js/framework',
-       'promise': '/public/js/lib/promise',
-       'messaging': '/public/js/messaging',
-       'componentRequester': '/public/js/component_requester',
-       'validator': '/components/form/js/util/Validator'
+       'componentMap': '/training-app/public/js/component_map',
+       'clientProvider': '/training-app/public/js/client_provider',
+       'modal': '/training-app/components/form/js/modal',
+       'context': '/training-app/public/js/context',
+       'eventEmitter': '/training-app/public/js/lib/EventEmitter',
+       'framework': '/training-app/public/js/framework',
+       'promise': '/training-app/public/js/lib/promise',
+       'messaging': '/training-app/public/js/messaging',
+       'componentRequester': '/training-app/public/js/component_requester',
+       'validator': '/training-app/components/form/js/util/Validator'
    }
 });
 function provide(configuration) {
