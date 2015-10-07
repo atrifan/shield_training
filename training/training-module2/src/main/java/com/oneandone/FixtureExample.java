@@ -55,7 +55,7 @@ public class FixtureExample {
                     "Current RestFixture row is not parseable (maybe empty or not existent)");
         }
         String methodName = cell0.getText();
-        if ("".equals(methodName)) {
+        if (methodName.isEmpty()) {
             throw new RuntimeException("RestFixture method not specified");
         }
         Method method1 = null;

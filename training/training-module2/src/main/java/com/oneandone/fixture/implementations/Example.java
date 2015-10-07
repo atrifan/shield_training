@@ -4,6 +4,15 @@ import com.oneandone.fixture.util.Format;
 import com.oneandone.fixture.util.RowWrapper;
 import com.oneandone.fixture.util.Tools;
 
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Invocation;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MultivaluedHashMap;
+import javax.ws.rs.core.MultivaluedMap;
+import javax.ws.rs.core.Response;
+import java.util.HashMap;
+
 /**
  * Created by atrifan on 10/7/2015.
  */
@@ -79,6 +88,26 @@ public class Example {
                     "assertEquals should use 3 cells only.");
         }
 
+    }
+
+    public void GET() {
+        String url = row.getCell(1).getText();
+        MultivaluedMap<String, Object> headers = new MultivaluedHashMap<String, Object>();
+        if(System.getProperties().contains("Accept")) {
+            headers.add("Accept", System.getProperty("Accept"));
+        } else {
+            headers.add("Accept", "application/json");
+        }
+
+        makeHttpCall(url, "GET", headers, null);
+    }
+
+    public void makeHttpCall(String path, String method, MultivaluedMap<String, Object> headerObject, String body) {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target("http://localhost:8080").path(path);
+        Invocation.Builder request = target.request().headers(headerObject);
+        Response response = request.build(method).invoke();
+        System.setProperty("statusCode", response.getStatus()+"");
     }
 
 }

@@ -1,7 +1,10 @@
 !define TEST_SYSTEM {slim}
 !path ..\training\training-module2\target\training-module2-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-|!-Table:com.oneandone.FixtureExample-!|
-|setVariable|name|Thor|
-|assertVariableEquals|name|Thor|
-|assertEquals|$#name##|Thor|
+|!-Table:com.oneandone.FixtureExample-!             |
+|setVariable         |id          |1                |
+|setVariable         |Accept      |application/json |
+|GET                 |/training-server/shield/$#id##|
+|assertVariableEquals|statusCode  |200              |
+
+

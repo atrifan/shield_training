@@ -8,12 +8,9 @@ import fit.ColumnFixture;
  *
  */
 public class ColumnExample extends ColumnFixture {
-    public int firstNumber;
+    private int firstNumber;
     public int secondNumber;
 
-    public void setFirstNumber(int firstNumber) {
-        this.firstNumber = firstNumber;
-    }
 
     public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
@@ -29,5 +26,9 @@ public class ColumnExample extends ColumnFixture {
     public boolean deleteHero() {
         App theApp = new App();
         return theApp.testDelete();
+    }
+
+    public void setMyFirstNumber(int firstNumber) {
+        this.firstNumber = firstNumber;
     }
 }

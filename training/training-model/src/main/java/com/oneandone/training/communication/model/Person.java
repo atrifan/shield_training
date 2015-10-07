@@ -32,4 +32,8 @@ public class Person implements Serializable{
         return this.age;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

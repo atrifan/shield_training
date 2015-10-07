@@ -166,13 +166,13 @@ public class Tools {
 		String regex = "\\$\\#[a-zA-Z0-9]+\\#\\#";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(output);
-		
+
 		while (matcher.find()){
 			String replace = matcher.group();
 			String variableName = replace.replace("##", "").replace("$#", "");
 			if (System.getProperties().containsKey(variableName)) {
 				String variableValue = System.getProperty(variableName);
-				output = output.replaceAll(Pattern.quote(replace), variableValue);				
+				output = output.replaceAll(Pattern.quote(replace), variableValue);
 			}
 		}
 		return output;
