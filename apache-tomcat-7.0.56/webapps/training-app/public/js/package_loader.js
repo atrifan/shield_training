@@ -1,18 +1,23 @@
 /**
  * Created by atrifan on 7/22/2015.
  */
+var url = window.location.pathname;
+url = url.split('/');
+var baseLocation = url.indexOf('public');
+var appLocation = url.slice(0, baseLocation);
+appLocation = appLocation.join('/');
 requirejs.config({
    paths: {
-       'componentMap': '/training-app/public/js/component_map',
-       'clientProvider': '/training-app/public/js/client_provider',
-       'modal': '/training-app/components/form/js/modal',
-       'context': '/training-app/public/js/context',
-       'eventEmitter': '/training-app/public/js/lib/EventEmitter',
-       'framework': '/training-app/public/js/framework',
-       'promise': '/training-app/public/js/lib/promise',
-       'messaging': '/training-app/public/js/messaging',
-       'componentRequester': '/training-app/public/js/component_requester',
-       'validator': '/training-app/components/form/js/util/Validator'
+       'componentMap': appLocation + '/public/js/component_map',
+       'clientProvider': appLocation + '/public/js/client_provider',
+       'modal': appLocation + '/components/form/js/modal',
+       'context': appLocation + '/public/js/context',
+       'eventEmitter': appLocation + '/public/js/lib/EventEmitter',
+       'framework': appLocation + '/public/js/framework',
+       'promise': appLocation + '/public/js/lib/promise',
+       'messaging': appLocation + '/public/js/messaging',
+       'componentRequester': appLocation + '/public/js/component_requester',
+       'validator': appLocation + '/components/form/js/util/Validator'
    }
 });
 function provide(configuration) {
