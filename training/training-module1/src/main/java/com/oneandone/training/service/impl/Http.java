@@ -43,4 +43,51 @@ public class Http implements Connection {
         }
 
     }
+
+    public Response getHeroes() {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target(SERVER_INFO_ENDPOINT).path("/shield");
+        Builder request = target.request();
+        ObjectMapper jsonMapper = new ObjectMapper();
+        String jsonRepresentation = null;
+
+        try {
+            Response response = request.get();
+            client.close();
+            return response;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
+
+    public Response getHero(Long id) {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target(SERVER_INFO_ENDPOINT).path("/shield/" + id);
+        Builder request = target.request();
+
+        try {
+            Response response = request.get();
+            client.close();
+            return response;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
+
+    public Response deleteHero(Long id) {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target(SERVER_INFO_ENDPOINT).path("/shield/" + id);
+        Builder request = target.request();
+
+        try {
+            Response response = request.delete();
+            client.close();
+            return response;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
 }

@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="training-model" />
         <module name="training-module1" />
+        <module name="training-module2" />
         <module name="training-server" />
         <module name="training-util" />
       </profile>
@@ -32,6 +33,7 @@
       <module name="training-java" target="1.5" />
       <module name="training-model" target="1.5" />
       <module name="training-module1" target="1.5" />
+      <module name="training-module2" target="1.5" />
       <module name="training-server" target="1.5" />
       <module name="training-util" target="1.5" />
     </bytecodeTargetLevel>

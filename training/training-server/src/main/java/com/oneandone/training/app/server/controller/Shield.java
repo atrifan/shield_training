@@ -2,9 +2,11 @@ package com.oneandone.training.app.server.controller;
 
 
 import com.oneandone.training.communication.model.inheritance.SuperHero;
+import com.oneandone.util.MemoryStore;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 /**
  * Created by atrifan on 9/17/2015.
@@ -13,6 +15,7 @@ import javax.ws.rs.core.Response;
 public class Shield {
 
     //TODO 5: get memory store as singleton
+    MemoryStore memoryStore = MemoryStore.getInstance();
 
     //tip: you don't have the memory store inside the module you need to import it
 
@@ -20,26 +23,54 @@ public class Shield {
 
     @POST
     @Consumes("application/json")
-    public Response registerHero(SuperHero humanBeeing) {
+    public Response registerHero(SuperHero superHero) {
 
-        //TODO 5: verify if in memory store there is this entry;
+        boolean entryExists = memoryStore.entryExists(superHero);
 
-        //TODO 5: if the humanBeeing does not exist in our DB store it
+        Long clientId = null;
 
-        //TODO 5: if the humanBeeing has been stored - return to the client the ID - with accepted status
+        if(!entryExists) {
+            clientId = memoryStore.saveEntry(superHero);
+            return Response.status(Response.Status.ACCEPTED).entity(clientId.toString()).build();
+        }
 
+        clientId = memoryStore.findEntry(superHero);
         //TODO 5: if the humanBeeing was already present in DB - return statusCode - FOUND
-        return Response.status(Response.Status.ACCEPTED).entity(null).build(); //<--- example
+        return Response.status(Response.Status.FOUND).entity(clientId.toString()).build();
     }
 
     @GET
     @Produces("application/json")
     public Response getHeroes() {
-        //TODO 5: return all the superHeroes
-        return null;
+        //TODO 5: return all the superHeroes with status OK
+        ArrayList<SuperHero> allSuperHeroes = memoryStore.getAll();
+        return Response.status(Response.Status.OK).entity(allSuperHeroes).build();
     }
 
     //TODO 7: make a delete endpoint so you can delete an entry
+    @DELETE
+    @Path("/{heroId}")
+    public Response deleteHeroes(@PathParam("heroId") Long heroId) {
+        boolean done = memoryStore.removeEntry(heroId);
+        if(done) {
+            return Response.status(Response.Status.OK).build();
+        }
+
+        return Response.status(Response.Status.NOT_FOUND).build();
+    }
+
 
     //TODO 7: make an endpoint so you can get a specific hero
+    @GET
+    @Path("/{heroId}")
+    @Produces("application/json")
+    public Response getHero(@PathParam("heroId") Long heroId) {
+        SuperHero theHero = memoryStore.getEntry(heroId);
+        if(theHero == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.status(Response.Status.OK).entity(theHero).build();
+    }
+
 }

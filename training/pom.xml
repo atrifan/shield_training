@@ -10,6 +10,9 @@
     <module>training-model</module>
     <module>training-module1</module>
     <module>training-util</module>
+    <module>training-module2</module>
+    <module>training-module2</module>
+    <module>training-module2</module>
   </modules>
   <packaging>pom</packaging>
 

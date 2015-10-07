@@ -1,4 +1,4 @@
-define(['./lib/EventEmitter'], function (EventEmitter) {
+define(['eventEmitter'], function (EventEmitter) {
     /**
      * Message Queue module.
      *
@@ -46,7 +46,6 @@ define(['./lib/EventEmitter'], function (EventEmitter) {
      * @public
      */
     Messaging.prototype.messagePublish = function (title, info) {
-        console.log('publish ', title);
         this.emit(title, info);
     };
 
@@ -59,7 +58,6 @@ define(['./lib/EventEmitter'], function (EventEmitter) {
      */
     Messaging.prototype.messageSubscribe = function (title, handler) {
         //this._jqEmulated.on(title, handler);
-        console.log('message subscribe', title);
         this.on(title, handler);
     };
 

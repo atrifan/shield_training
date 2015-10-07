@@ -1,6 +1,7 @@
 package com.oneandone.training.app.standalone;
 
 import com.oneandone.training.communication.model.Person;
+import com.oneandone.training.communication.model.inheritance.SuperHero;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +22,11 @@ public class TCPServer {
             Socket connectionSocket = server.accept();
             ObjectInputStream reader = new ObjectInputStream(connectionSocket.getInputStream());
             ObjectOutputStream writer = new ObjectOutputStream(connectionSocket.getOutputStream());
-            Person connectionIdentity = (Person) reader.readObject();
+            Object receivedObject = reader.readObject();
+            System.out.println("CHECK INSTANCE v1 " + (receivedObject instanceof Person));
+            System.out.println("CHECK INSTANCE v2 " + (receivedObject instanceof SuperHero));
+            System.out.println(receivedObject.toString());
+            Person connectionIdentity = (Person) receivedObject;
             System.out.println(String.format("%s connected he is of age %s years, %s cm tall and runs %s km/h",
                     connectionIdentity.getName(),
                     connectionIdentity.getAge(),

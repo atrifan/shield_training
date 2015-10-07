@@ -13,7 +13,26 @@ import com.oneandone.training.communication.model.Person;
  *
  * You must be able to set a new name for the person - changing the Person form immutable to mutable
  */
-public class SuperHero{
+public class SuperHero extends Person{
 
+    private String superPower;
+
+    public SuperHero() {};
+
+    public SuperHero(String name, long age, long height, float speed, String superPower) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.speed = speed;
+        this.superPower = superPower;
+    }
+
+    public String getSuperPower() {
+        return superPower;
+    }
+
+    public void setSuperPower(String superPower) {
+        this.superPower = superPower;
+    }
     //TODO: implement
 }
