@@ -1,0 +1,9 @@
+ro\atrifan\training\app\App$ConnectionType.class
+ro\atrifan\training\app\App$2.class
+ro\atrifan\training\app\App$1.class
+ro\atrifan\training\exceptions\StatusNotOk.class
+ro\atrifan\training\service\impl\Http.class
+ro\atrifan\training\service\Connection.class
+ro\atrifan\training\exceptions\TestFailed.class
+ro\atrifan\training\app\App.class
+ro\atrifan\training\service\impl\Persistent.class

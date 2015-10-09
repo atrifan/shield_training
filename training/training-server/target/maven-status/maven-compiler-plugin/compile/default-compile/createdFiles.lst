@@ -1,0 +1,6 @@
+ro\atrifan\training\app\standalone\App.class
+ro\atrifan\training\app\server\controller\Register.class
+ro\atrifan\training\app\server\controller\Login.class
+ro\atrifan\training\app\standalone\TCPServer.class
+ro\atrifan\training\app\server\controller\Shield.class
+ro\atrifan\training\app\standalone\WSServer.class

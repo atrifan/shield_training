@@ -1,6 +1,6 @@
-F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\com\oneandone\training\app\standalone\TCPServer.java
-F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\com\oneandone\training\app\standalone\App.java
-F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\com\oneandone\training\app\standalone\WSServer.java
-F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\com\oneandone\training\app\server\controller\Register.java
-F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\com\oneandone\training\app\server\controller\Login.java
-F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\com\oneandone\training\app\server\controller\Shield.java
+F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\ro\atrifan\training\app\standalone\App.java
+F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\ro\atrifan\training\app\server\controller\Login.java
+F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\ro\atrifan\training\app\server\controller\Shield.java
+F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\ro\atrifan\training\app\standalone\TCPServer.java
+F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\ro\atrifan\training\app\server\controller\Register.java
+F:\DEVELOPMENT\OTHER-PROJECTS\training-repo\shield_training\training\training-server\src\main\java\ro\atrifan\training\app\standalone\WSServer.java

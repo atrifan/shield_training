@@ -1,9 +1,9 @@
 !define TEST_SYSTEM {fit}
 !path ..\training\training-module2\target\training-module2-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-!|com.oneandone.ColumnExample                            |
-|firstNumber|secondNumber|total?|persistHero?|deleteHero?|
-|1          |2           |2     |true        |true       |
+!|com.oneandone.ColumnExample   |
+|firstNumber|secondNumber|total?|
+|1          |2           |3     |
 
 |Action Fixture                   |
 |start|com.oneandone.ActionExample|

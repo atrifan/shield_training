@@ -19,7 +19,7 @@
 <context:annotation-config />
 	<tx:annotation-driven />
 
-        <bean class="com.oneandone.training.app.server.controller.Shield"/>
+        <bean class="ro.atrifan.training.app.server.controller.Shield"/>
 
         <!--TODO: YOU NEED TO DECLARE THE BEAN THAT YOU WANT TO USE VIA ANNOTATION-->
 

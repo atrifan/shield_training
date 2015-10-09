@@ -73,6 +73,7 @@
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="module" module-name="training-model" />
     <orderEntry type="module" module-name="training-util" />
+    <orderEntry type="library" name="Maven: com.oneandone:training-model:1.0-SNAPSHOT" level="project" />
   </component>
   <component name="POM File Configuration" pomFile="" />
 </module>
