@@ -28,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ActionExample.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ActionExample.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/ActionExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.91237116">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Example.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/fixture/implementations/Example.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -1103,12 +1103,12 @@
       <workItem from="1444217734253" duration="9741000" />
       <workItem from="1444334546600" duration="970000" />
       <workItem from="1444406067857" duration="586000" />
-      <workItem from="1460494855674" duration="4285000" />
+      <workItem from="1460494855674" duration="4895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22180000" />
+    <option name="totallyTimeSpent" value="22790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1240,8 +1240,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="30" />
           <folding>
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1331,8 +1331,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="30" />
           <folding>
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1498,8 +1498,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1541,8 +1541,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="30" />
           <folding>
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1611,14 +1611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/ActionExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/fixture/util/Tools.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.732143">
@@ -1638,6 +1630,14 @@
             <element signature="e#566#567#0" expanded="true" />
             <element signature="e#596#597#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/ActionExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.91237116">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
