@@ -16,6 +16,10 @@ import java.util.Vector;
  * get json path $.field1.field2
  * get xml path /
  */
+
+/**
+ * LEAVE THIS UNTOUCHED
+ */
 public class FixtureExample {
     protected RowWrapper row;
 
@@ -43,7 +47,6 @@ public class FixtureExample {
             row = mapRowToString(rowWrapper, row);
             res.add(row);
         }
-        // res.add(row);
     }
 
     protected void evaluateRow(RowWrapper currentRow) {

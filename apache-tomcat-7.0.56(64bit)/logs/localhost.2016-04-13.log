@@ -1,0 +1,6 @@
+Apr 13, 2016 12:16:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Apr 13, 2016 12:16:35 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Apr 13, 2016 12:38:02 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext

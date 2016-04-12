@@ -61,7 +61,6 @@
           <element id="archive" name="training-util-1.0-SNAPSHOT.jar">
             <element id="module-output" name="training-util" />
           </element>
-          <element id="library" level="project" name="Maven: com.oneandone:training-model:1.0-SNAPSHOT" />
         </element>
       </element>
       <element id="directory" name="META-INF">

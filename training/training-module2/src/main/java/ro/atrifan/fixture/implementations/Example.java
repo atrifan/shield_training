@@ -90,7 +90,8 @@ public class Example {
     }
 
     public void GET() {
-        String url = row.getCell(1).getText();
+        String url = Tools.variableReplacer(row.getCell(1).getText());
+        System.out.println(url);
         MultivaluedMap<String, Object> headers = new MultivaluedHashMap<String, Object>();
         if(System.getProperties().contains("Accept")) {
             headers.add("Accept", System.getProperty("Accept"));
@@ -98,7 +99,17 @@ public class Example {
             headers.add("Accept", "application/json");
         }
 
+        Format format = new Format();
+        format.replace(row.getCell(1));
         makeHttpCall(url, "GET", headers, null);
+    }
+
+    public void POST() {
+        //TODO 3: implement POST - write also fitnesse test to include POST
+    }
+
+    public void DELETE() {
+        //TODO 4: implement DELETE - write also fitnesse test to include DELETE
     }
 
     public void makeHttpCall(String path, String method, MultivaluedMap<String, Object> headerObject, String body) {

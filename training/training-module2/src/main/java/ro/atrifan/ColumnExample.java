@@ -1,6 +1,5 @@
 package ro.atrifan;
 
-import ro.atrifan.training.app.App;
 import fit.ColumnFixture;
 
 /**
@@ -18,14 +17,15 @@ public class ColumnExample extends ColumnFixture {
     public int total() {
         return firstNumber + secondNumber;
     }
+
     public boolean persistHero() {
-        App theapp = new App();
-        return theapp.testPersist();
+        //TODO 1: persistHero return true false use training_module 1
+        return false;
     }
 
     public boolean deleteHero() {
-        App theApp = new App();
-        return theApp.testDelete();
+        //TODO 1: deleteHero return true false use training_module 2
+        return false;
     }
 
     public void setMyFirstNumber(int firstNumber) {

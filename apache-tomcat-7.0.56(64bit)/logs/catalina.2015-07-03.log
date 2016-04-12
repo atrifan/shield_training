@@ -1,0 +1,195 @@
+Iul 03, 2015 11:27:16 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.31 using APR version 1.4.8.
+Iul 03, 2015 11:27:16 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Iul 03, 2015 11:27:18 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.0.1h 5 Jun 2014)
+Iul 03, 2015 11:27:18 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 11:27:18 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 11:27:18 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3135 ms
+Iul 03, 2015 11:27:19 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Iul 03, 2015 11:27:19 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.56
+Iul 03, 2015 11:27:19 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive F:\development tools\apache-tomcat-7.0.56\webapps\Server.war
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive F:\development tools\apache-tomcat-7.0.56\webapps\Server.war has finished in 77,933 ms
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\host-manager
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\host-manager has finished in 127 ms
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\licenta
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\licenta has finished in 59 ms
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\manager
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\manager has finished in 90 ms
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\ROOT
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\ROOT has finished in 75 ms
+Iul 03, 2015 11:28:37 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 11:28:37 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 11:28:37 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 78553 ms
+Iul 03, 2015 12:39:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 12:39:57 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 12:39:57 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Iul 03, 2015 12:40:06 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [Resteasy]
+Iul 03, 2015 12:40:07 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [Resteasy]
+Iul 03, 2015 12:40:08 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated for Servlet [Resteasy]
+Iul 03, 2015 12:40:11 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/Server] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Iul 03, 2015 12:40:12 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/Server] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+Iul 03, 2015 12:40:12 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/Server] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1a8295f7]) and a value of type [java.util.ArrayList] (value [[org.jboss.resteasy.spi.ResteasyProviderFactory@4c3b1db8]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Iul 03, 2015 12:40:12 PM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org.codehaus.jackson.map.deser.SettableBeanProperty$FieldProperty.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1612)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.codehaus.jackson.map.deser.StdDeserializerProvider.<init>(StdDeserializerProvider.java:81)
+	at org.codehaus.jackson.map.ObjectMapper.<init>(ObjectMapper.java:398)
+	at org.codehaus.jackson.map.ObjectMapper.<init>(ObjectMapper.java:358)
+	at org.codehaus.jackson.map.ObjectMapper.<init>(ObjectMapper.java:328)
+	at org.codehaus.jackson.jaxrs.MapperConfigurator.getDefaultMapper(MapperConfigurator.java:69)
+	at org.codehaus.jackson.jaxrs.JacksonJsonProvider.locateMapper(JacksonJsonProvider.java:649)
+	at org.codehaus.jackson.jaxrs.JacksonJsonProvider.readFrom(JacksonJsonProvider.java:413)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.readFrom(AbstractReaderInterceptorContext.java:59)
+	at org.jboss.resteasy.core.interception.ServerReaderInterceptorContext.readFrom(ServerReaderInterceptorContext.java:62)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:51)
+	at org.jboss.resteasy.plugins.interceptors.encoding.GZIPDecodingInterceptor.aroundReadFrom(GZIPDecodingInterceptor.java:59)
+	at org.jboss.resteasy.core.interception.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:53)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:150)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:89)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:112)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:296)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:250)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:237)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:356)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:179)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:503)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2462)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2451)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Iul 03, 2015 12:40:12 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 12:40:12 PM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load javax.ws.rs.ext.FactoryFinder.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1612)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at javax.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:135)
+	at javax.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:120)
+	at org.jboss.resteasy.spi.ResteasyProviderFactory.getInstance(ResteasyProviderFactory.java:600)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:234)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:503)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2462)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2451)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Iul 03, 2015 12:40:13 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 12:40:13 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 12:40:13 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 12:40:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.31 using APR version 1.4.8.
+Iul 03, 2015 12:40:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Iul 03, 2015 12:40:21 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.0.1h 5 Jun 2014)
+Iul 03, 2015 12:40:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 12:40:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 12:40:22 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 3160 ms
+Iul 03, 2015 12:40:22 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Iul 03, 2015 12:40:22 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.56
+Iul 03, 2015 12:40:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive F:\development tools\apache-tomcat-7.0.56\webapps\Server.war
+Iul 03, 2015 12:40:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive F:\development tools\apache-tomcat-7.0.56\webapps\Server.war has finished in 10,939 ms
+Iul 03, 2015 12:40:33 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\host-manager
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\host-manager has finished in 143 ms
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\licenta
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\licenta has finished in 68 ms
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\manager
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\manager has finished in 83 ms
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory F:\development tools\apache-tomcat-7.0.56\webapps\ROOT
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory F:\development tools\apache-tomcat-7.0.56\webapps\ROOT has finished in 68 ms
+Iul 03, 2015 12:40:34 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8080"]
+Iul 03, 2015 12:40:34 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Iul 03, 2015 12:40:34 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11580 ms
