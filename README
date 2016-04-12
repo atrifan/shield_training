@@ -1,0 +1,69 @@
+TODO 1 - Inheritance
+--------------------
+
+In the following location please implement the SuperHero class so that it makes the Person class a mutable class.
+You will find extra description inside the class.
+
+Also because you have HTTP communication and also for good practice try to declare also the default constructor.
+
+training-model/com.oneandone.training.communication.model.inheritance
+
+TODO 2 - Perfect HTTP calls
+---------------------------
+
+Always remember to close a HTTP connection.
+
+training-module1/com.oneandone.training.service.impl
+
+TODO 3 - No TODO 3
+------------------
+
+TODO 4 - Instantiate once use everywhere
+----------------------------------------
+
+Give possible examples of classes that you might need to use everywhere with the same instantiated data.
+Alternatives?
+
+training-util/com.oneandone.util
+
+TODO 5 - Finding your way in doing something - first HTTP controller
+--------------------------------------------------------------------
+
+training-server/com.oneandone.training.server.controller
+
+
+TODO 6 - The Alternative for TODO 4
+-----------------------------------
+
+training-server/resources/local/spring
+training-server/com.oneandone.training.server.controller
+
+TODO 7 - Continue Working on that controller - make it fully usable
+--------------------------------------------------------------------
+
+training-server/com.oneandone.training.server.controller
+
+
+TODO 7 & 3/4
+------------
+
+- maven profiles
+- build
+- deploy
+- manual test
+
+TODO 8 - With one hand you're a dev with one hand you are an automation testing engineer
+-----------------------------------------------------------------------------------------
+
+training-module1/com.oneandone.training Connection.class
+
+TODO 9 - Now testing testing testing
+------------------------------------
+
+training-module1/com.oneandone.training App.class
+
+TODO 10 - Putting it all together = peace of cake
+-------------------------------------------------
+
+training-module1/com.oneadone.training App.class
+training-module1/com.oneandone.training.exceptions
