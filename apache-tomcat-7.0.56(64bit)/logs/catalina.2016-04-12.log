@@ -38,3 +38,17 @@ Apr 12, 2016 10:14:12 PM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler ["ajp-apr-8009"]
 Apr 12, 2016 10:14:12 PM org.apache.catalina.startup.Catalina start
 INFO: Server startup in 1704 ms
+Apr 12, 2016 10:31:59 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8080"]
+Apr 12, 2016 10:31:59 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Apr 12, 2016 10:31:59 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Apr 12, 2016 10:31:59 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8080"]
+Apr 12, 2016 10:31:59 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Apr 12, 2016 10:31:59 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8080"]
+Apr 12, 2016 10:31:59 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
