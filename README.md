@@ -2,16 +2,16 @@
 
 ###Pre-Requisites###
 
-- GIT
+- **GIT**
 	* Linux `sudo apt-get install git`
 	* Windows `https://git-scm.com/downloads`
 	
-- IDE
+- **IDE**
 	* IntelliJ(preferable) `https://www.jetbrains.com/idea/download`
 	* Eclipse `http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2`
 	* NetBeans - please don't
 	
-- JDK 7
+- **JDK 7**
 	* Linux `sudo apt-get install openjdk-7-jdk`
 	* Windows 
 		1. `http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html`
@@ -19,7 +19,7 @@
 			* New > name: JAVA_HOME value: path/to/java/jdk
 			* Edit > PATH add `;%JAVA_HOME%;%JAVA_HOME/bin`
 	
-- Maven 
+- **Maven**
 	* Linux `sudo apt-get install maven`
 	* Windows 
 		1. `https://maven.apache.org/download.cgi`
@@ -28,7 +28,7 @@
 			* Edit > PATH add `;%MAVEN_HOME%`
 			* to test type in cmd - `mvn -v`
 			
-- Tomcat 7
+- **Tomcat 7**
 	* You will find it in the bellow package for both 32-bit and 64-bit architectures
 
 ###This is to be checked out locally:###
