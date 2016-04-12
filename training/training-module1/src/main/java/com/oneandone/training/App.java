@@ -46,6 +46,8 @@ public class App {
 
         ConnectionType connectionType = ConnectionType.fromString(args[0]);
         SuperHero mySelf = new SuperHero();
+        //TODO 3: edit myself make it personal
+
         ObjectMapper objectMapper = new ObjectMapper();
         App myApp = new App();
 

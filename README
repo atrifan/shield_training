@@ -4,19 +4,28 @@ TODO 1 - Inheritance
 In the following location please implement the SuperHero class so that it makes the Person class a mutable class.
 You will find extra description inside the class.
 
-Also because you have HTTP communication and also for good practice try to declare also the default constructor.
+Also because you have HTTP/TCP communication and some serializers need it and also for good practice 
+try to declare also the default constructor.
 
 training-model/com.oneandone.training.communication.model.inheritance
 
-TODO 2 - Perfect HTTP calls
+TODO 2 - Perfect Socket calls
 ---------------------------
 
-Always remember to close a HTTP connection.
+Always remember to close a connection.
 
 training-module1/com.oneandone.training.service.impl
 
-TODO 3 - No TODO 3
-------------------
+TODO 3 - Be yourself
+--------------------
+
+Make your own superhero
+training-module1/com.oneandone.training App.class
+
+TODO 3 & 3/4 - Run things locally
+---------------------------------
+App.class - training - with parameters run with ``persistent``
+TCPServer.class - server
 
 TODO 4 - Instantiate once use everywhere
 ----------------------------------------
