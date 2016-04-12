@@ -1,2 +1,0 @@
-127.0.0.1 - - [28/Jun/2015:21:58:59 +0300] "POST /Server/driver/3/transaction HTTP/1.1" 400 -
-127.0.0.1 - - [28/Jun/2015:21:59:33 +0300] "POST /Server/driver/3/transaction HTTP/1.1" 400 -

@@ -1,14 +1,14 @@
 !define TEST_SYSTEM {fit}
 !path ..\training\training-module2\target\training-module2-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-!|com.oneandone.ColumnExample   |
+!|ro.atrifan.ColumnExample      |
 |firstNumber|secondNumber|total?|
 |1          |2           |3     |
 
-|Action Fixture                   |
-|start|com.oneandone.ActionExample|
-|enter|setName       |HELLO       |
-|enter|setSurName    |WORLD       |
-|press|getFullName                |
-|check|checkFullName |HELLO WORLD |
+|Action Fixture                 |
+|start|ro.atrifan.ActionExample |
+|enter|setName      |HELLO      |
+|enter|setSurName   |WORLD      |
+|press|getFullName              |
+|check|checkFullName|HELLO WORLD|
 
