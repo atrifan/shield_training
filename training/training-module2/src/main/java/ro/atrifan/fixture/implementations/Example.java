@@ -109,7 +109,7 @@ public class Example {
     }
 
     public void DELETE() {
-        //TODO 4: implement DELETE - write also fitnesse test to include DELETE
+        //TODO 3: implement DELETE - write also fitnesse test to include DELETE
     }
 
     public void makeHttpCall(String path, String method, MultivaluedMap<String, Object> headerObject, String body) {
