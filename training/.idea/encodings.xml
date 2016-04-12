@@ -5,10 +5,6 @@
     <file url="file://$PROJECT_DIR$/training-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/training-module1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/training-module2" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/fixture/util/CellWrapper.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/fixture/util/Format.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/fixture/util/RowWrapper.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/training-module2/src/main/java/ro/atrifan/fixture/util/Tools.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/training-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/training-util" charset="UTF-8" />
   </component>
