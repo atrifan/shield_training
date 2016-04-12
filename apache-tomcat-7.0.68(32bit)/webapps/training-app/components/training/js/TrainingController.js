@@ -33,7 +33,7 @@ define(['../../../public/js/lib/promise.js'], function (Promise) {
         var heroContainer = $('<div class="heroContainer"></div>');
         this._wrapper.append(heroContainer);
         var componentConfiguration = {
-            handleBar: {
+            component: {
                 name: 'training',
                 view: 'profile'
             },

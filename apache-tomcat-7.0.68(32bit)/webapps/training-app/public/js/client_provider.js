@@ -1,4 +1,4 @@
-define(['./framework', './lib/promise'], function (Framework, Promise) {
+define(['framework', 'promise'], function (Framework, Promise) {
 
     /**
      * The ClientProvider module, renders the component's css, asks the framework to process the components
@@ -10,6 +10,13 @@ define(['./framework', './lib/promise'], function (Framework, Promise) {
     function ClientProvider() {
 
     }
+
+    ClientProvider._instance = null;
+
+    ClientProvider.get = function () {
+        return ClientProvider._instance ||
+            (ClientProvider._instance = new ClientProvider());
+    };
 
     /**
      * Renders the components css and asks the framework to process the components configuration.
@@ -44,6 +51,7 @@ define(['./framework', './lib/promise'], function (Framework, Promise) {
                         loadingIndicator.remove();
                     });
                 }, function (err) {
+                    throw Error(err);
                     //TODO: do something here
                 });
             } else {
@@ -53,10 +61,12 @@ define(['./framework', './lib/promise'], function (Framework, Promise) {
                     loadingIndicator.fadeOut();
                     loadingIndicator.remove();
                 }, function (err) {
+                    throw Error(err);
                     //TODO: do something here
                 });
             }
         }, function (err) {
+            throw Error(err);
             //TODO: show an error
             //show an error box;
         });
@@ -71,13 +81,13 @@ define(['./framework', './lib/promise'], function (Framework, Promise) {
      * @private
      */
     ClientProvider.prototype._renderCss = function (configuration, css, location) {
-        if (!css) {
-            return;
-        }
 
         var deferrers = [];
 
-        var deferred = Promise.defer();
+        if (!css) {
+            configuration.cssLoaded = Promise.all(deferrers);
+            return Promise.all(deferrers);
+        }
 
         var head = $("head"),
             linkElement;
@@ -90,25 +100,21 @@ define(['./framework', './lib/promise'], function (Framework, Promise) {
             if (sameLinks.length === 0) {
                 var deferrer = Promise.defer();
 
-                deferrers.push(deferrer);
+                //deferrers.push(deferrer);
                 linkElement = document.createElement('link');
-                linkElement.type = "text/css";
                 linkElement.rel = "stylesheet";
+                linkElement.type = "text/css";
                 linkElement.href = cssPath;
                 linkElement.onload = function () {
                     deferrer.resolve();
-                }
+                };
                 head.append(linkElement);
             }
         }
 
-        configuration.cssLoaded = deferred.promise;
-        Promise.all(deferrer).then(function () {
-            deferred.resolve();
-        }, function (err) {
-            deferred.reject(err);
-        });
+        configuration.cssLoaded = Promise.all(deferrers);
+        return Promise.all(deferrers);
     }
 
-    return ClientProvider;
+    return ClientProvider.get();
 });

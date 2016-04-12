@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../resources/icon.png">
 
     <title>Application</title>
@@ -10,6 +10,9 @@
     <script src="../js/lib/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="../js/lib/es5-shim.min.js"></script>
     <script src="../js/lib/handlebars.js"></script>
+    <script src="../js/lib/less.js"></script>
+    <script data-main="../js/package_loader.js" src="../js/lib/require.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
     <script type="text/javascript">
         //modify this variable if you don't plan to use the express server
         //var serverUsed = 'express';
@@ -19,14 +22,9 @@
 
 
     </script>
-    <script data-main="../js/package_loader.js" src="../js/lib/require.js"></script>
-    <script src="../js/lib/bootstrap.min.js"></script>
-
-
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -35,7 +33,7 @@
 
 
 <div class="header" type="x-handlebars-template">
-    {{component name="training" view="index" parentId=parentId}}
+    {{component name="test" view="index"}}
 </div>
 
 </body>

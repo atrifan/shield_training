@@ -1,7 +1,25 @@
 /**
  * Created by atrifan on 7/22/2015.
  */
-requirejs.config({});
+var url = window.location.pathname;
+url = url.split('/');
+var baseLocation = url.indexOf('public');
+var appLocation = url.slice(0, baseLocation);
+appLocation = appLocation.join('/');
+requirejs.config({
+   paths: {
+       'componentMap': appLocation + '/public/js/component_map',
+       'clientProvider': appLocation + '/public/js/client_provider',
+       'modal': appLocation + '/components/form/js/modal',
+       'context': appLocation + '/public/js/context',
+       'eventEmitter': appLocation + '/public/js/lib/EventEmitter',
+       'framework': appLocation + '/public/js/framework',
+       'promise': appLocation + '/public/js/lib/promise',
+       'messaging': appLocation + '/public/js/messaging',
+       'componentRequester': appLocation + '/public/js/component_requester',
+       'validator': appLocation + '/components/form/js/util/Validator'
+   }
+});
 function provide(configuration) {
     if (typeof configuration === 'undefined') {
         provide(provisioningStack);
@@ -21,9 +39,11 @@ function provide(configuration) {
 var provider,
     provisioningStack = [],
     eventingQueue,
-    templateEngine = {};
+    templateEngine = {
+    },
+    incrementalId = 0;
 
-requirejs(['./messaging', './register_handlebars', '../js/client_provider'], function(Messaging, HandleBarsRegister, ClientProvider) {
+requirejs(['messaging', './register_handlebars', 'clientProvider'], function(Messaging, HandleBarsRegister, ClientProvider) {
     eventingQueue = Messaging.get();
     HandleBarsRegister();
     /**
@@ -41,6 +61,7 @@ requirejs(['./messaging', './register_handlebars', '../js/client_provider'], fun
                 content: $(this).html()
             });
             $(this).html('');
+            $(this).css('visibility', 'inherit');
         });
 
         for(var i = 0, len = handlebarsTemplate.length; i < len; i++) {
@@ -55,6 +76,6 @@ requirejs(['./messaging', './register_handlebars', '../js/client_provider'], fun
      * @param {Object} configuration the configuration of the component representing guidelines
      * for the provisioning method to provide the specified component.
      */
-    provider = new ClientProvider();
+    provider = ClientProvider;
     provide();
 });

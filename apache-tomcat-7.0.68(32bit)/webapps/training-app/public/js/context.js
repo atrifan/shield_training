@@ -1,6 +1,7 @@
-define(['./component_map',
-        './lib/promise'
-        ], function (ComponentMap, Promise) {
+define(['componentMap',
+        'promise',
+        'componentRequester'
+        ], function (ComponentMap, Promise, ComponentRequester) {
 
     /**
      * The component's controller execution context this module is being injected in the controller
@@ -36,6 +37,15 @@ define(['./component_map',
          */
         this.storrage = new Firebase("https://sweltering-fire-6062.firebaseio.com");
 
+        /**
+         * The loading indicator
+         * @public
+         */
+
+        this.loadingIndicator = $('<div class="loading overlay"><div class="loader center"></div></div>');
+        this.loadingIndicator.css('display', 'none');
+        $('#' + this._parentId).append(this.loadingIndicator);
+
 
     }
 
@@ -62,18 +72,19 @@ define(['./component_map',
         var componentMap = ComponentMap.get().getComponentMap();
         for (var component in componentMap) {
             if (componentMap[component].sid === sid) {
-                return componentMap[component].controller;
+                return componentMap[component].controller.promise;
             }
         }
     }
 
     Context.prototype.getChildren = function() {
+        var self = this;
         var componentMap = ComponentMap.get().getComponentMap();
         var children = ComponentMap.get()._getDeps(this._parentId);
         var theChildren = {};
         for(var i = 0; i < children.length; i++) {
             if(componentMap[children[i]]) {
-                theChildren[children[i]] = componentMap[children[i]].controller;
+                theChildren[children[i]] = componentMap[children[i]].controller.promise;
             }
         }
 
@@ -85,15 +96,15 @@ define(['./component_map',
                 resolvedChildren[ComponentMap.get().getComponent(ids[i]).sid] = data[ids[i]];
             }
             deferred.resolve(resolvedChildren);
+        }, function (err) {
+            throw Error(err);
         });
         return deferred.promise;
     };
 
 
     Context.prototype.delete = function (sid) {
-        console.log('deleting', sid);
         var componentMap = ComponentMap.get().getComponentMap();
-        console.log(componentMap.length);
         for (var component in componentMap) {
             if (componentMap[component].sid === sid || component === sid) {
                 sid = componentMap[component].sid;
@@ -106,7 +117,6 @@ define(['./component_map',
                 var domElement = $('#' + component);
                 var results = ComponentMap.get()._getDeps(component);
                 for (var i = 0, len = results.length; i < len; i++) {
-                    console.log("element", results[i]);
                     this.delete(results[i]);
                 }
                 domElement.remove();
@@ -129,41 +139,30 @@ define(['./component_map',
 
         this.delete(sid);
         //register an put stuff her
-        var handlebarContext = '{{component ';
-        for(var key in componentConfig) {
-            handlebarContext += key + '="' + componentConfig[key] + '"';
-        }
-        handlebarContext += "}}"
-        var content = Handlebars.compile(handlebarContext)
-        domElement.html(content);
+        var content = ComponentRequester.render(componentConfig.component, componentConfig.context);
+        var componentMap = ComponentMap.get();
+        var domObject = $(content.string);
+        domElement.html(content.string);
+        return this.getComponent(componentMap.getComponent(domObject.attr('id'))['sid']);
     }
 
 
     Context.prototype.insert = function(element, componentConfig) {
-        var handlebar = '{{component ';
-        for (var handlebarInfo in componentConfig.handleBar) {
-            handlebar += handlebarInfo + '="' + componentConfig.handleBar[handlebarInfo] + '"';
-        }
 
-        for (var handlebarInfo in componentConfig.context) {
-            handlebar += handlebarInfo + '="' + componentConfig.context[handlebarInfo] + '"';
-        }
+        componentConfig.component['parentId'] = this._parentId;
+        var content = ComponentRequester.render(componentConfig.component, componentConfig.context),
+            componentMap = ComponentMap.get();
+        var domObject = $(content.string);
+        element.html(content.string);
+        return this.getComponent(componentMap.getComponent(domObject.attr('id'))['sid']);
 
-        handlebar += "}}";
-        console.log(handlebar);
-
-        var content = Handlebars.compile(handlebar);
-        element.html(content);
-
-
-
-    }
+    };
 
     Context.prototype.insertTemplate = function(templateId, templateContext, location) {
         var domElement = $.parseHTML(unescapeHTML(this._templates[templateId](templateContext).trim()));
         location.append(domElement);
         return domElement;
-    }
+    };
 
     function unescapeHTML(p_string)
     {

@@ -4,6 +4,8 @@ package com.oneandone.training.communication.model.inheritance;
  * Created by alexandru.trifan on 17.09.2015.
  */
 
+import com.oneandone.training.communication.model.Person;
+
 /**
  * This class needs to inherit the person class from `training-model`
  * Tip: you are using maven, first you must import your dependency module
@@ -12,7 +14,7 @@ package com.oneandone.training.communication.model.inheritance;
  * You must be able to set a new name for the person, have a setter a getter,
  * alter constructor - changing the Person from immutable to mutable
  */
-public class SuperHero{
+public class SuperHero extends Person {
 
     //TODO: implement
 }
