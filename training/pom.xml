@@ -13,6 +13,33 @@
   </modules>
   <packaging>pom</packaging>
 
+  <profiles>
+    <profile>
+      <id>local</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <resources>
+          <resource>
+            <directory>src/main/resources/local</directory>
+          </resource>
+        </resources>
+      </build>
+    </profile>
+    <profile>
+      <id>cloud</id>
+      <build>
+        <resources>
+          <resource>
+            <directory>src/main/resources/cloud</directory>
+          </resource>
+        </resources>
+      </build>
+    </profile>
+  </profiles>
+
+
   <name>training-java</name>
   <url>http://maven.apache.org</url>
 

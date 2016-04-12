@@ -19,7 +19,6 @@ public class Persistent implements Connection {
             ObjectOutputStream writer = new ObjectOutputStream(clientSocket.getOutputStream());
             ObjectInputStream reader = new ObjectInputStream(clientSocket.getInputStream());
             writer.writeObject(myself);
-
             //TODO 2: close connection
             return null;
         } catch (IOException e) {

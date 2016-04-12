@@ -19,6 +19,10 @@
 <context:annotation-config />
 	<tx:annotation-driven />
 
+        <bean class="com.oneandone.training.server.controller.Shield"/>
+
+        <!--TODO: YOU NEED TO DECLARE THE BEAN THAT YOU WANT TO USE VIA ANNOTATION-->
+
 
 </beans>
 

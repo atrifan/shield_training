@@ -18,8 +18,8 @@ public class MemoryStore {
     //TODO 4: make this class a singleton
 
     public synchronized long saveEntry(SuperHero newHero) {
-        storage.put(id++, newHero);
-        return id;
+        storage.put(id, newHero);
+        return id++;
     }
 
     public synchronized void removeEntry(long id) {
