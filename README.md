@@ -4,17 +4,17 @@
 
 - **GIT**
 	* Linux `sudo apt-get install git`
-	* Windows `https://git-scm.com/downloads`
+	* Windows https://git-scm.com/downloads
 	
 - **IDE**
-	* IntelliJ(preferable) `https://www.jetbrains.com/idea/download`
-	* Eclipse `http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2`
-	* NetBeans - please don't
+	* IntelliJ(preferable) https://www.jetbrains.com/idea/download
+	* Eclipse http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2
+	* NetBeans - **please don't**
 	
 - **JDK 7**
 	* Linux `sudo apt-get install openjdk-7-jdk`
 	* Windows 
-		1. `http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html`
+		1. http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 		2. Computer(This PC) > Properties > Advanced System Settings > Environment Variables
 			* New > name: JAVA_HOME value: path/to/java/jdk
 			* Edit > PATH add `;%JAVA_HOME%;%JAVA_HOME/bin`
@@ -22,7 +22,7 @@
 - **Maven**
 	* Linux `sudo apt-get install maven`
 	* Windows 
-		1. `https://maven.apache.org/download.cgi`
+		1. https://maven.apache.org/download.cgi
 		2. Computer(This PC) > Properties > Advanced System Settings > Environment Variables
 			* New > name: MAVEN_HOME value: path/to/maven/bin
 			* Edit > PATH add `;%MAVEN_HOME%`
