@@ -8,7 +8,7 @@
 ##This is to be checked out locally:#
 
 - `git clone https://github.com/atrifan/shield_training.git`
-- `git checkout training_module2 -b local_training_module2`
+- `git checkout origin/training_part2 -b local_training_part2`
 
 ##TODO 0 - Fitnesse WalkThrough##
 
