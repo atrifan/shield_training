@@ -3,7 +3,7 @@
 - **Completion of training_module1**
 
 - **Fitnesse-standalone(not necessary/found in repo)**
-	* `http://fitnesse.org/FitNesseDownload`
+	* http://fitnesse.org/FitNesseDownload
 	
 ##This is to be checked out locally:#
 
@@ -64,4 +64,4 @@
 
 #Feedback time#
 
-- follow the following link and give some usefull feedback [http://goo.gl/forms/zbJ6jnmWAF]
+- follow the following link and give some usefull feedback http://goo.gl/forms/zbJ6jnmWAF
