@@ -34,7 +34,7 @@
 ###This is to be checked out locally:###
 
 - `git clone https://github.com/atrifan/shield_training.git`
-- `git checkout training_module1 -b local_training_module1`
+- `git checkout origin/training_part1 -b local_training_module1`
 
 ##TODO 1 - Inheritance##
 
