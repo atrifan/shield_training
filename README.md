@@ -60,3 +60,8 @@
 ##TODO 4 - Discuss##
 
 - what do you thing about it
+
+
+#Feedback time#
+
+- follow the following link and give some usefull feedback `http://goo.gl/forms/zbJ6jnmWAF`
